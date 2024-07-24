@@ -1,7 +1,7 @@
 package atividade4;
 
 public class JogoDeXadrez {
-	
+
 	private String[][] matriz = { 
 			{"R","N","B","Q","K","B","N","R"},
 			{"P","P","P","P","P","P","P","P"},
@@ -11,26 +11,26 @@ public class JogoDeXadrez {
 			{" "," "," "," "," "," "," "," "},
 			{"p","p","p","p","p","p","p","p"},
 			{"r","n","b","q","k","b","n","r"}};
-	
+
 
 	public void imprimirTabuleiro() {
 		System.out.print("");
-        for (int i = 0; i < matriz.length; i++) {
-            System.out.print(i + "  ");
-        }
-        System.out.println();
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + "  ");
-            }
-            System.out.println(i);
-        }
-    }
-	
+		for (int i = 0; i < matriz.length; i++) {
+			System.out.print(i + "  ");
+		}
+		System.out.println();
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				System.out.print(matriz[i][j] + "  ");
+			}
+			System.out.println(i);
+		}
+	}
+
 	public boolean isPeao(int linhaOrigem, int colunaOrigem) {
 		return matriz[linhaOrigem][colunaOrigem].equals("p") || matriz[linhaOrigem][colunaOrigem].equals("P");
 	}
-	
+
 	public void jogada(int linhaDestino, int colunaDestino, int linhaOrigem, int colunaOrigem) {
 		if(matriz[linhaOrigem][colunaOrigem].equals("P")) {
 			matriz[linhaOrigem][colunaOrigem] = " ";
