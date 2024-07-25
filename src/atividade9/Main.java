@@ -8,7 +8,7 @@ public class Main {
 		float raio = 0;
 		String raioInput;
 		
-		for(int i = 0; i < 6; i++) {
+		for(int i = 0; i < 8; i++) {
 			raioInput = JOptionPane.showInputDialog("Informe o raio do circulo: ");
 			
 			if(raioInput == null || raioInput.trim().isEmpty()) {
