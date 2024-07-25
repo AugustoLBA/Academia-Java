@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		double lado1 = 0, lado2 = 0;
+		float lado1 = 0, lado2 = 0;
 		String lado1Input, lado2Input;
 
 		for(int i = 0; i < 6; i++) {
@@ -17,8 +17,8 @@ public class Main {
 				JOptionPane.showMessageDialog(null, "Informe lados validos !");
 				i--;
 			}else {
-				lado1 = Double.parseDouble(lado1Input);
-				lado2 = Double.parseDouble(lado2Input);
+				lado1 = Float.parseFloat(lado1Input);
+				lado2 = Float.parseFloat(lado2Input);
 
 				if(lado1 < 0 || lado2 < 0) {
 					JOptionPane.showMessageDialog(null, "Informe lados validos !");
